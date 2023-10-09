@@ -9,3 +9,20 @@ searchButton.addEventListener("click", () => {
     fetch(`http://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`)
       .then((response) => response.json())
       .then((data) => {
+        if (data.Response === "True") {
+          movieDetails.innerHTML = `
+                        <h2>${data.Title}</h2>
+                        <img src="${data.Poster}" alt="${data.Title} Poster">
+                        <p>${data.Plot}</p>
+                        <p>Released: ${data.Released}</p>
+                        <p>Genre: ${data.Genre}</p>
+                    `;
+        } else {
+          movieDetails.innerHTML = "<p>Movie not found.</p>";
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
+});
