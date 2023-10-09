@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+header {
+  /* background-color: #333; */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  color: white;
+}
+
+#searchInput {
+  margin-top: 25px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  outline: 1px solid black;
+  border-radius: 5px;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#searchButton:hover {
+  background-color: #d32f2f;
+}
+
+#movieDetails {
+  padding: 20px;
+  color: white;
+}
+
+#movieDetails img {
+  outline: 1px solid white;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  header {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  #searchInput {
+      padding: 5px;
+      font-size: 14px;
+  }
+
+  #searchButton {
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+
+  #movieDetails {
+      padding: 10px;
+  }
+}
