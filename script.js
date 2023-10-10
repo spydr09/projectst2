@@ -14,8 +14,8 @@ searchButton.addEventListener("click", () => {
                         <h2>${data.Title}</h2>
                         <img src="${data.Poster}" alt="${data.Title} Poster">
                         <p>${data.Plot}</p>
-                        <p>Released: ${data.Released}</p>
-                        <p>Genre: ${data.Genre}</p>
+                        <p><b>Released</b>: ${data.Released}</p>
+                        <p><b>Genre</b>: ${data.Genre}</p>
                     `;
         } else {
           movieDetails.innerHTML = "<p>Movie not found.</p>";
