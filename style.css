@@ -2,12 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(119, 67, 27);
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
 }
 
 header {
-  /* background-color: #333; */
-  color: #7a3e3e;
+  background-color: #222; /* Slightly darker header background */
   padding: 20px;
   text-align: center;
 }
@@ -15,15 +15,17 @@ header {
 h1 {
   margin: 0;
   font-size: 36px;
-  color: rgb(9, 9, 9);
+  color: #fff;
 }
 
 #searchInput {
   margin-top: 25px;
   padding: 10px;
   font-size: 14px;
+  background-color: #444; /* Darker input background */
+  color: #fff;
   border: none;
-  outline: 1px solid rgb(244, 242, 242);
+  outline: 1px solid #666; /* Darker outline color */
   border-radius: 5px;
 }
 
